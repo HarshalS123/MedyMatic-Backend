@@ -14,7 +14,7 @@ const upload = multer({ dest: 'uploads/' }); // Files will be saved in the 'uplo
 
 app.use(bodyParser.json());
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3000'], // Your frontend URL
+    origin: '*', // Your frontend URL
     methods: ['POST', 'GET', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
