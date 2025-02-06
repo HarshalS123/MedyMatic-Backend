@@ -46,7 +46,7 @@ app.post('/submit-client-support', upload.array('supportingDocs'), async (req, r
     const { name, email, message } = req.body;
     const files = req.files; // Access uploaded files
 
-    const recipientEmail = 'heysid88@gmail.com';
+    const recipientEmail = 'support@medymatic.com';
     const subject = 'New Client Support Form Submission';
 
     const emailContent = `
@@ -76,7 +76,7 @@ app.post('/submit-careers', upload.array('resumes'), async (req, res) => {
     const { name, email, message } = req.body;
     const files = req.files; // Access uploaded files
 
-    const recipientEmail = 'heysid88@gmail.com';
+    const recipientEmail = 'hr@medymatic.com';
     const subject = 'New Careers Form Submission';
 
     const emailContent = `
@@ -105,7 +105,7 @@ app.post('/submit-careers', upload.array('resumes'), async (req, res) => {
 app.post('/submit-contact-us', async (req, res) => {
     const { name, email, message } = req.body;
 
-    const recipientEmail = 'heysid88@gmail.com';
+    const recipientEmail = 'info@medymatic.com';
     const subject = 'New Contact Us Form Submission';
 
     const emailContent = `
